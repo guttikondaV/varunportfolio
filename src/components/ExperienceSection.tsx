@@ -65,29 +65,29 @@ const experiences: Experience[] = [
 const ExperienceSection: React.FC = () => {
   const timelineRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add('animate-fade-in');
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.1 }
+  //   );
 
-    timelineRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
+  //   timelineRefs.current.forEach((ref) => {
+  //     if (ref) observer.observe(ref);
+  //   });
 
-    return () => {
-      timelineRefs.current.forEach((ref) => {
-        if (ref) observer.unobserve(ref);
-      });
-    };
-  }, []);
+  //   return () => {
+  //     timelineRefs.current.forEach((ref) => {
+  //       if (ref) observer.unobserve(ref);
+  //     });
+  //   };
+  // }, []);
 
   return (
     <section id="experience" className="py-24">

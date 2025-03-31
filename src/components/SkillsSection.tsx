@@ -14,7 +14,7 @@ interface Skill {
 const skills: Skill[] = [
   // Machine Learning & AI
   { name: "PyTorch", level: 90, category: "ml" },
-  { name: "TensorFlow", level: 85, category: "ml" },
+  { name: "Analytics", level: 85, category: "ml" },
   { name: "Computer Vision", level: 95, category: "ml" },
   { name: "NLP", level: 90, category: "ml" },
   { name: "Deep Learning", level: 85, category: "ml" },
@@ -26,7 +26,7 @@ const skills: Skill[] = [
   { name: "JavaScript", level: 85, category: "languages" },
   { name: "TypeScript", level: 80, category: "languages" },
   { name: "SQL", level: 90, category: "languages" },
-  { name: "R", level: 75, category: "languages" },
+  { name: "C++", level: 75, category: "languages" },
   { name: "Java", level: 70, category: "languages" },
   
   // Web Development
@@ -37,19 +37,19 @@ const skills: Skill[] = [
   { name: "Node.js", level: 75, category: "web" },
   
   // Data Engineering
-  { name: "AWS", level: 80, category: "data" },
-  { name: "Data Pipeline", level: 85, category: "data" },
-  { name: "MongoDB", level: 75, category: "data" },
-  { name: "PostgreSQL", level: 85, category: "data" },
-  { name: "Docker", level: 80, category: "data" },
-  { name: "Apache Spark", level: 70, category: "data" },
+  { name: "Azure", level: 80, category: "mlops" },
+  { name: "Data Pipeline", level: 85, category: "mlops" },
+  { name: "MongoDB", level: 75, category: "mlops" },
+  { name: "PostgreSQL", level: 85, category: "mlops" },
+  { name: "Docker", level: 80, category: "mlops" },
+  { name: "Apache Spark", level: 70, category: "mlops" },
 ];
 
 const categories = [
   { id: "ml", name: "Machine Learning & AI" },
   { id: "languages", name: "Programming Languages" },
   { id: "web", name: "Web Development" },
-  { id: "data", name: "Data Engineering" },
+  { id: "mlops", name: "MLOps" },
 ];
 
 const SkillsSection: React.FC = () => {

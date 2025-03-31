@@ -35,10 +35,10 @@ const AboutSection: React.FC = () => {
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-muted-foreground mb-4">
-                I'm a Data Scientist and Machine Learning Engineer with a passion for turning complex datasets into actionable insights. Currently pursuing my Master's in Data Science at Northeastern University, I bring professional experience from roles at SatSure and BankBuddy.ai.
+                I'm a Data Scientist and Machine Learning Engineer with a passion for turning complex datasets into actionable insights. Currently pursuing my Master's in Data Science at Northeastern University, I bring professional experience from roles at SatSure Analytics and BankBuddy.ai.
               </p>
               <p className="text-muted-foreground mb-4">
-                My expertise spans Computer Vision, Natural Language Processing, and Data Engineering. I thrive in innovative environments and enjoy building solutions that leverage cutting-edge machine learning techniques to solve real-world problems.
+                My expertise spans Computer Vision, Natural Language Processing, and MLOps. I thrive in innovative environments and enjoy building solutions that leverage cutting-edge machine learning techniques to solve real-world problems.
               </p>
               <p className="text-muted-foreground mb-4">
                 With a strong foundation in Python, PyTorch, React.js, Django, AWS, and SQL, I approach technical challenges with both analytical rigor and creative problem-solving. I'm constantly expanding my knowledge through continuous learning and practical application.
@@ -106,7 +106,7 @@ const AboutSection: React.FC = () => {
                       />
                       <h5 className="font-medium">Northeastern University</h5>
                     </div>
-                    <p className="text-sm text-muted-foreground">Master of Science in Data Science (Expected 2024)</p>
+                    <p className="text-sm text-muted-foreground">Master of Science in Data Science (Expected December 2024)</p>
                   </div>
                   
                   <div>
