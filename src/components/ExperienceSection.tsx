@@ -110,7 +110,7 @@ const ExperienceSection: React.FC = () => {
             {experiences.map((experience, index) => (
               <div 
                 key={experience.id}
-                ref={(el) => (timelineRefs.current[index] = el)}
+                // ref={(el) => (timelineRefs.current[index] = el)}
                 className={cn(
                   "mb-12 opacity-0 transition-all duration-700",
                   index % 2 === 0 ? "delay-100" : "delay-300"
