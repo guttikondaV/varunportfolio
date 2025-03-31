@@ -170,7 +170,7 @@ const ProjectsSection: React.FC = () => {
           ))}
         </div>
         
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <Button 
             variant="outline" 
             size="lg"
@@ -179,7 +179,7 @@ const ProjectsSection: React.FC = () => {
             <span className="mr-2 transition-transform group-hover:translate-x-1">View All Projects</span> 
             <ExternalLink size={16} className="transition-transform group-hover:translate-x-1" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
