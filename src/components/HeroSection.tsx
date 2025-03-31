@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+function openURLInNewTab(url: string): void{
+  window.open(url, "_blank").focus()
+}
+
 const HeroSection: React.FC = () => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
@@ -32,10 +36,10 @@ const HeroSection: React.FC = () => {
                 Hi, I'm <span className="text-primary">Varun</span>
               </span>
               <span className="block mt-2">
-                Turning Data into
+                Building Computer Vision Models
               </span>
               <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Actionable Insights
+                for Autonomous Navigation
               </span>
             </h1>
             
@@ -47,7 +51,7 @@ const HeroSection: React.FC = () => {
               <Button 
                 size="lg" 
                 className="button-hover"
-                onClick={() => window.open('mailto:varun@example.com')}
+                onClick={() => window.open('mailto:guttikonda.v@northeastern.edu')}
               >
                 Get in Touch
               </Button>
@@ -56,6 +60,7 @@ const HeroSection: React.FC = () => {
                 size="lg" 
                 variant="outline"
                 className="group"
+                onClick={() => openURLInNewTab("https://drive.google.com/file/d/1T4mAICSmly8VoFBucp6vu-uxfOKjFnx5/view?usp=sharing")}
               >
                 <Download size={18} className="mr-2 transition-transform group-hover:-translate-y-1" />
                 Download CV

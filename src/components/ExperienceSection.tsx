@@ -22,7 +22,7 @@ const experiences: Experience[] = [
     role: "Graduate Teaching Assistant",
     company: "Northeastern University",
     logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGwTPCvlTQlvw/company-logo_400_400/company-logo_400_400/0/1630531267482/northeastern_university_logo?e=1748476800&v=beta&t=W0yqUmKm2_XtjkOBaP0RmKqTWZ004dMxW-5WxU93U4Y",
-    period: "2023 - Present",
+    period: "August 2023 - December 2024",
     location: "San Jose, California, United States",
     description: [
       "Assisting professors in teaching data science and machine learning courses",
@@ -34,9 +34,9 @@ const experiences: Experience[] = [
   {
     id: 2,
     role: "Data Scientist",
-    company: "SatSure",
+    company: "SatSure Analytics",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQFQED6kGut4_g/company-logo_400_400/company-logo_400_400/0/1678962420647/satsure_logo?e=1748476800&v=beta&t=IFnGJ497Tv_3SQ1LR3zMR4EqBOCoM4aGm-4sOh9ak8A",
-    period: "2021 - 2023",
+    period: "April 2024 - September 2024",
     location: "Bengaluru, Karnataka, India",
     description: [
       "Developed machine learning models for satellite imagery analysis",
@@ -51,7 +51,7 @@ const experiences: Experience[] = [
     role: "Software Engineer",
     company: "BankBuddy.ai",
     logo: "https://media.licdn.com/dms/image/v2/C510BAQHLsHggFnuPHQ/company-logo_400_400/company-logo_400_400/0/1631407277572?e=1748476800&v=beta&t=hoQ6jdnenh3ZZHY-jRAxoVjdWJA9g7u-5NiksBP0oKA",
-    period: "2019 - 2021",
+    period: "January 20222 - June 20222",
     location: "Greater Bengaluru Area",
     description: [
       "Built NLP solutions for banking chatbots and virtual assistants",

@@ -26,7 +26,7 @@ const AboutSection: React.FC = () => {
           </h2>
           <div className="h-1 w-24 bg-primary rounded mb-8"></div>
           <p className="text-muted-foreground max-w-2xl text-center">
-            Currently a Graduate Teaching Assistant at Northeastern University with experience in data science and software engineering.
+            Graduate Teaching Assistant at Northeastern University with experience in Computer Vision, Data Science and Software Engineering.
           </p>
         </div>
         
@@ -35,7 +35,7 @@ const AboutSection: React.FC = () => {
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-muted-foreground mb-4">
-                I'm a Data Scientist and Machine Learning Engineer with a passion for turning complex datasets into actionable insights. Currently pursuing my Master's in Data Science at Northeastern University, I bring professional experience from roles at SatSure Analytics and BankBuddy.ai.
+                I'm a Data Scientist and Machine Learning Engineer with a passion for autonomous vehicles and their experience design. Currently pursuing my Master's in Data Science at Northeastern University, I bring professional experience from roles at SatSure Analytics and BankBuddy.ai.
               </p>
               <p className="text-muted-foreground mb-4">
                 My expertise spans Computer Vision, Natural Language Processing, and MLOps. I thrive in innovative environments and enjoy building solutions that leverage cutting-edge machine learning techniques to solve real-world problems.
@@ -118,7 +118,7 @@ const AboutSection: React.FC = () => {
                       />
                       <h5 className="font-medium">Vellore Institute of Technology</h5>
                     </div>
-                    <p className="text-sm text-muted-foreground">Bachelor's in Computer Science (Grade: 8.68)</p>
+                    <p className="text-sm text-muted-foreground">Bachelor's in Computer Science (Graduated September 2022)</p>
                   </div>
                 </div>
               </CardContent>

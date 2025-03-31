@@ -1,8 +1,12 @@
 
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Notebook, Mail, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+function openURLInNewTab(url: string): void{
+  window.open(url, "_blank").focus()
+}
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -26,16 +30,16 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex items-center space-x-4 mb-6 md:mb-0">
-            <Button variant="ghost" size="icon" className="rounded-full">
+            <Button variant="ghost" size="icon" className="rounded-full" onClick={() => openURLInNewTab("https://github.com/VarunGuttikonda")}>
               <Github size={18} />
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full">
+            <Button variant="ghost" size="icon" className="rounded-full" onClick={() => openURLInNewTab("https://www.linkedin.com/in/varun-guttikonda")}>
               <Linkedin size={18} />
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <Twitter size={18} />
+            <Button variant="ghost" size="icon" className="rounded-full" onClick={() => openURLInNewTab("https://www.kaggle.com/varunguttikonda")}>
+              <Notebook size={18} />
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full">
+            <Button variant="ghost" size="icon" className="rounded-full" onClick={() => openURLInNewTab("mailto:guttikonda.v@northeastern.edu")}>
               <Mail size={18} />
             </Button>
           </div>
