@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { Building, Calendar, MapPin } from 'lucide-react';
 
 interface Experience {
   id: number;
@@ -65,29 +66,30 @@ const experiences: Experience[] = [
 const ExperienceSection: React.FC = () => {
   const timelineRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add('animate-fade-in');
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.1 }
-  //   );
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+            entry.target.classList.remove('opacity-0');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-  //   timelineRefs.current.forEach((ref) => {
-  //     if (ref) observer.observe(ref);
-  //   });
+    timelineRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
 
-  //   return () => {
-  //     timelineRefs.current.forEach((ref) => {
-  //       if (ref) observer.unobserve(ref);
-  //     });
-  //   };
-  // }, []);
+    return () => {
+      timelineRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
 
   return (
     <section id="experience" className="py-24">
@@ -110,7 +112,7 @@ const ExperienceSection: React.FC = () => {
             {experiences.map((experience, index) => (
               <div 
                 key={experience.id}
-                // ref={(el) => (timelineRefs.current[index] = el)}
+                ref={(el) => (timelineRefs.current[index] = el)}
                 className={cn(
                   "mb-12 opacity-0 transition-all duration-700",
                   index % 2 === 0 ? "delay-100" : "delay-300"
@@ -119,10 +121,10 @@ const ExperienceSection: React.FC = () => {
                 <div className="timeline-dot">
                   <div className="w-2 h-2 rounded-full bg-background"></div>
                 </div>
-                <Card className="glass card-hover mt-[-8px]">
+                <Card className="glass card-hover mt-[-8px] border border-primary/10 hover:border-primary/30 transition-all">
                   <div className="p-6">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 rounded-md overflow-hidden mr-4 bg-white p-1">
+                      <div className="w-12 h-12 rounded-md overflow-hidden mr-4 bg-white p-1 shadow-sm">
                         <img 
                           src={experience.logo} 
                           alt={experience.company}
@@ -136,9 +138,9 @@ const ExperienceSection: React.FC = () => {
                     </div>
                     
                     <div className="flex flex-wrap gap-2 text-sm text-muted-foreground mb-4">
-                      <span>{experience.period}</span>
+                      <span className="flex items-center"><Calendar className="w-3 h-3 mr-1" />{experience.period}</span>
                       <span>•</span>
-                      <span>{experience.location}</span>
+                      <span className="flex items-center"><MapPin className="w-3 h-3 mr-1" />{experience.location}</span>
                     </div>
                     
                     <ul className="space-y-2 mb-6">
