@@ -5,6 +5,7 @@ run-name: ${{ github.actor }} is building and deploying the portfolio website
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -14,7 +15,7 @@ jobs:
       pages: write
       id-token: write
 
-    enviroment:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
@@ -44,8 +45,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          branch: gh-pages
-          folder: ./dist/
           token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/
-          publish_branch: gh-pages
