@@ -19,6 +19,20 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
+    role: "Graduate Research Assistant",
+    company: "Northeastern University",
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGwTPCvlTQlvw/company-logo_400_400/company-logo_400_400/0/1630531267482/northeastern_university_logo?e=1748476800&v=beta&t=W0yqUmKm2_XtjkOBaP0RmKqTWZ004dMxW-5WxU93U4Y",
+    period: "August 2024 - December 2024",
+    location: "San Jose, California, United States",
+    description: [
+      "Researching about different neural architectures for medical applications",
+      "Finetuning LLM models to support multi-modal medical research",
+      "Reading research papers and helping professors write and present research"
+    ],
+    skills: ["Data Science", "Machine Learning", "Python", "Teaching", "Mentoring"]
+  },
+  {
+    id: 2,
     role: "Graduate Teaching Assistant",
     company: "Northeastern University",
     logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGwTPCvlTQlvw/company-logo_400_400/company-logo_400_400/0/1630531267482/northeastern_university_logo?e=1748476800&v=beta&t=W0yqUmKm2_XtjkOBaP0RmKqTWZ004dMxW-5WxU93U4Y",
@@ -32,7 +46,7 @@ const experiences: Experience[] = [
     skills: ["Data Science", "Machine Learning", "Python", "Teaching", "Mentoring"]
   },
   {
-    id: 2,
+    id: 3,
     role: "Data Scientist",
     company: "SatSure Analytics",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQFQED6kGut4_g/company-logo_400_400/company-logo_400_400/0/1678962420647/satsure_logo?e=1748476800&v=beta&t=IFnGJ497Tv_3SQ1LR3zMR4EqBOCoM4aGm-4sOh9ak8A",
@@ -47,7 +61,7 @@ const experiences: Experience[] = [
     skills: ["Computer Vision", "Satellite Imagery", "PyTorch", "Data Engineering", "MLOps"]
   },
   {
-    id: 3,
+    id: 4,
     role: "Software Engineer",
     company: "BankBuddy.ai",
     logo: "https://media.licdn.com/dms/image/v2/C510BAQHLsHggFnuPHQ/company-logo_400_400/company-logo_400_400/0/1631407277572?e=1748476800&v=beta&t=hoQ6jdnenh3ZZHY-jRAxoVjdWJA9g7u-5NiksBP0oKA",
